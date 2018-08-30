@@ -34,12 +34,58 @@
 }
 
 .top-nav-collapse {
-    background-color: rgba(96, 125, 139, 0.1);
+    background-color: rgba(96, 125, 139, 0.8);
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #4285F4;
+        background-color: rgba(233, 30, 99, 0.7);
     }
 }
+.dropdown .dropdown-menu .dropdown-item:hover, 
+.dropleft .dropdown-menu .dropdown-item:active, 
+.dropleft .dropdown-menu .dropdown-item:hover, 
+.dropright .dropdown-menu .dropdown-item:active, 
+.dropright .dropdown-menu .dropdown-item:hover, 
+.dropup .dropdown-menu .dropdown-item:active, 
+.dropup .dropdown-menu .dropdown-item:hover {
+  color: #fff !important;
+}
 
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:active, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropright .dropdown-menu.dropdown-primary .dropdown-item:active, .dropright .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropup .dropdown-menu.dropdown-primary .dropdown-item:active, .dropup .dropdown-menu.dropdown-primary .dropdown-item:hover {
+    background-color: rgba(233, 30, 99, 0.7) !important;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover, .dropleft .dropdown-menu .dropdown-item:active, .dropleft .dropdown-menu .dropdown-item:hover, .dropright .dropdown-menu .dropdown-item:active, .dropright .dropdown-menu .dropdown-item:hover, .dropup .dropdown-menu .dropdown-item:active, .dropup .dropdown-menu .dropdown-item:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    background-color: #4285f4;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  padding: .5rem;
+margin-left: 0;
+font-size: .9rem;
+}
+.dropdown-menu {
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown:focus .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  /*z-index: 1;*/
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
