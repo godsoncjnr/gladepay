@@ -174,3 +174,21 @@ font-size: .9rem;
 .border {
   border: 2px solid rgba(233, 30, 99, 0.7) !important;
 }
+.custom-height-2 {
+  line-height: 1.6;
+  font-weight: normal;
+}
+.sub-feature-list {
+  list-style: none;
+  line-height: 2;
+}
+
+.sub-feature-list li:before {
+  content: '✓  ';
+  border-radius: 6px;
+  margin-right: 5px;
+  background-color: rgba(233, 30, 99, 0.1);
+  padding: 5px 4px 5px 8px;
+  color: rgba(233, 30, 99, 0.7);
+}
+.feature-list
