@@ -176,7 +176,6 @@ font-size: .9rem;
 }
 .custom-height-2 {
   line-height: 1.6;
-  font-weight: normal;
 }
 .sub-feature-list {
   list-style: none;
@@ -190,4 +189,8 @@ font-size: .9rem;
   background-color: rgba(233, 30, 99, 0.1);
   padding: 5px 4px 5px 8px;
   color: rgba(233, 30, 99, 0.7);
+}
+.section-padding {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
