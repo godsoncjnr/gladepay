@@ -24,10 +24,88 @@
 }
 /*Material Design Icons set*/
 
-/*.view {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
-    background-size: cover;
-}*/
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/*Material Design Icons set*/
+
+/*Mater Design Roboto font*/
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('../font/roboto/RobotoSlab-Bold-webfont.eot');
+    src: url('../font/roboto/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto/RobotoSlab-Bold-webfont.woff2') format('woff2'),
+         url('../font/roboto/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('../font/roboto/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('../font/roboto/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slablight';
+    src: url('../font/roboto/RobotoSlab-Light-webfont.eot');
+    src: url('../font/roboto/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto/RobotoSlab-Light-webfont.woff2') format('woff2'),
+         url('../font/roboto/RobotoSlab-Light-webfont.woff') format('woff'),
+         url('../font/roboto/RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('../font/roboto/RobotoSlab-Light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('../font/roboto/RobotoSlab-Regular-webfont.eot');
+    src: url('../font/roboto/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto/RobotoSlab-Regular-webfont.woff2') format('woff2'),
+         url('../font/roboto/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('../font/roboto/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('../font/roboto/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabthin';
+    src: url('../font/roboto/RobotoSlab-Thin-webfont.eot');
+    src: url('../font/roboto/RobotoSlab-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto/RobotoSlab-Thin-webfont.woff2') format('woff2'),
+         url('../font/roboto/RobotoSlab-Thin-webfont.woff') format('woff'),
+         url('../font/roboto/RobotoSlab-Thin-webfont.ttf') format('truetype'),
+         url('../font/roboto/RobotoSlab-Thin-webfont.svg#roboto_slabthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Mater Design Roboto font*/
+
+.title1 {
+  font-family: 'roboto_slabbold';
+}
+.title2 {
+  font-family: 'roboto_slablight';
+}
+.title3 {
+  font-family: 'roboto_slabregular';
+}
+.title4 {
+  font-family: 'roboto_slabthin';
+}
 
 .navbar {
     background-color: transparent;
@@ -86,6 +164,13 @@ font-size: .9rem;
 .dropdown:hover .dropdown-menu {
   visibility: visible; /* shows sub-menu */
   opacity: 1;
-  /*z-index: 1;*/
+  z-index: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  transition-delay: 0s, 0s, 0.3s;} /* this removes the transition delay so the menu will be visible while the other styles transition */
+
+#info2 {
+  margin-top: -100px;
+}
+.border {
+  border: 2px solid rgba(233, 30, 99, 0.7) !important;
+}
