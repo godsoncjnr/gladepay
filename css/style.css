@@ -199,6 +199,9 @@ font-size: .9rem;
   padding-bottom: 100px;
 }
 .banner {
-  background: url('../img/banners/bggggg.png')no-repeat center center;
+  background: url('../img/banners/payment-banner.jpg')no-repeat center center;
   background-size: cover;
+}
+.footer-text {
+  color: #272e4b !important;
 }
